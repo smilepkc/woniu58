@@ -1,0 +1,99 @@
+#good-list{
+	width: 1200px;
+	height:580px;
+	margin: 0 auto;
+}
+.good{
+	width: 220px;
+	height: 253px;
+	box-sizing: border-box;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	float: left;
+}
+.good-img{
+	height:180px;
+	text-align: center;
+	line-height:180px;
+}
+.good-img img{
+	width: 70%;
+	transition: transform 0.5s;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+.good-img img:hover{
+	transform: scale(1.1);
+}
+
+
+
+
+.good-info{
+	height: 70px;
+	background-color: #F8F8F8;
+	border-top: 1px solid gray;
+}
+
+.good-right,.good-left{
+	float: left;
+	text-align: center;
+}
+.good-left{
+	width:70px;
+}
+.good-right{
+	width: 140px;
+}
+.good-price{
+	font-size: 16px;
+	height: 35px;
+	line-height: 35px;
+	
+}
+.good-add{
+	height: 35px;
+	
+	text-align: center;
+}
+.good-add img{
+	vertical-align: middle;
+	width: 20px;
+	
+}
+.good-right{
+	line-height:1.4;
+	font-size: 14px;	
+	height:70px;
+	padding:10px 5px;
+	box-sizing: border-box;
+	overflow: hidden;
+	
+}
+
+
+
+/* 
+ 分页
+ */
+.page{
+	width: 300px;
+	height: 30px;
+	margin: 0 auto;
+	
+}
+.page-item{
+	height: 20px;
+	line-height: 20px;
+	border: 1px solid #ccc;
+	margin-left: 5px;
+	float: left;
+	text-align: center;
+	color: #999;
+	padding:2px 5px;
+}
+.page-item:hover{
+	background-color: #ddd;
+	cursor: pointer;
+}

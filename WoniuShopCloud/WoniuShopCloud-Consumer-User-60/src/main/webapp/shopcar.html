@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/basic.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shopcar.css"/>
+	</head>
+	<body>
+		<div id="page-black"></div>
+		<!-- 
+		登录  注册部分
+		-->
+		
+		<!-- 登录 -->
+		<div id="login" class="outer-black">
+			<!--  关闭登录注册弹窗-->
+			<div class="close"><img src="icon/关闭.png" onclick="closeLoginBox()"></div>
+			<div class="login-title">登录</div>
+			<div class="login-form">
+				<div class="form-group">
+					<span class="i-user f-span"><input type="text" placeholder="请输入账号" class="f-input" /></span>
+				</div>
+				<div class="form-group">
+					<span class="i-password f-span"><input type="password" placeholder="请输入密码" class="f-input"/> </span>
+				</div>
+			</div>
+			<div class="l-btn">
+				<button type="button" class="btn btn-danger ">登录</button>
+			</div>
+		</div>
+		<!-- 注册-->
+		<div id="register" class="outer-black">
+			<div class="close"><img src="icon/关闭.png" onclick="closeRegisterBox()"></div>
+			<div class="register-title">注册</div>
+			<div class="register-form">
+				<div class="form-group">
+				<span class="i-user f-span"><input type="text" placeholder="请输入账号" class="f-input" /></span>
+				</div>
+				<div class="form-group">
+				<span class="i-password f-span"><input type="password" placeholder="请输入密码" class="f-input"/> </span>
+				</div>
+				<div class="form-group">
+				<span class="i-password f-span"><input type="password" placeholder="请再次输入密码" class="f-input"/> </span>
+				</div>
+			</div>
+			<div class="l-btn">
+				<button type="button" class="btn btn-danger ">注册</button>
+			</div> 
+		</div>
+		
+		
+		
+		<!-- 
+		登录 注册结束
+		-->
+		<div id="header">
+			<div id="logo"><a href="index.html">WoniuShop</a></div>
+			<div id="userzoom">
+				<!-- if not login , use this code block-->
+				<div id="n-inout">
+					<a href="#" onclick="showLoginBox()" class="icon i-user">登录</a>
+					<a href="#" onclick="showRegisterBox()" class=" icon i-register">注册</a>
+				</div>
+				<!-- if logined，use this -->
+				<!-- <div id="y-inout">
+					<a href="order.html" class="icon i-order">订单</a>
+					<a href="shopcar.html" class="icon i-shopcar">购物车</a>
+					<a href="" class="icon i-user">13888888888</a>
+					<a href="" class="icon i-loginout">注销</a>
+				</div> -->
+			</div>
+		</div>
+		<!-- 主要内容 -->
+		<div id="balance">您当期的余额为: <span class="s-money"> ￥1000000</span></div>
+		<table id="lists" >
+			<tr>
+				<th></th>
+				<th>商品名称</th>
+				<th>单价</th>
+				<th>数量</th>
+				<th>操作</th>
+			</tr>
+		</table>
+		<div id="pay">
+			<div class="btn-pay"><a href="order.html" class="btn btn-danger f-white">生成订单</a></div>
+			<div class="total">总价为 <span class="s-money">￥ 499</span></div>
+		</div>
+		<div id="footer">
+			蜗牛创想科技-woniushop&copy; 版权所有
+		</div>
+		<script src="js/jquery.min.js" ></script>
+		<script src="js/basic.js" ></script>
+		<script src="js/common.js" ></script>
+		<script src="js/shopcar.js" ></script>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+#balance{
+	height: 30px;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 1000px;
+	font-size: 14px;
+	border-bottom: 1px solid #ccc;
+}
+
+#lists{
+	width: 1000px;
+	border: 0;
+	margin: 0 auto ;
+	border-spacing: 0px;
+}
+#lists td,th{
+	text-align:center;
+	border-bottom: 1px solid #ccc;
+	height:70px;
+}
+#lists tr:hover{
+	background-color: #ddd;
+		
+}
+.td-g-img{
+	width: 40%;
+	
+}
+.td-g-img img{
+	height: 70px;
+	border-radius: 50%;
+}
+td img:hover{
+	cursor: pointer;
+}
+
+
+#pay{
+	width: 1000px;
+	height: 70px;
+	margin:  0 auto;
+}
+#pay >div{
+	float: right;
+	line-height: 70px;
+	text-align: center;
+}
+#pay .btn-pay{
+	margin-left: 100px;
+}

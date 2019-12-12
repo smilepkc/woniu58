@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/basic.css"/>
+		<link rel="stylesheet" type="text/css" href="css/address.css"/>
+		<title></title>
+	</head>
+	<body>
+	<!-- 头部区域 -->
+		<div id="page-black"></div>
+		<!-- 
+		登录  注册部分
+		-->
+		
+		<!-- 登录 -->
+		<div id="login" class="outer-black">
+			<!--  关闭登录注册弹窗-->
+			<div class="close"><img src="icon/关闭.png" onclick="closeLoginBox()"></div>
+			<div class="login-title">登录</div>
+			<div class="login-form">
+				<div class="form-group">
+					<span class="i-user f-span"><input type="text" placeholder="请输入账号" class="f-input" /></span>
+				</div>
+				<div class="form-group">
+					<span class="i-password f-span"><input type="password" placeholder="请输入密码" class="f-input"/> </span>
+				</div>
+			</div>
+			<div class="l-btn">
+				<button type="button" class="btn btn-danger ">登录</button>
+			</div>
+		</div>
+		<!-- 注册-->
+		<div id="register" class="outer-black">
+			<div class="close"><img src="icon/关闭.png" onclick="closeRegisterBox()"></div>
+			<div class="register-title">注册</div>
+			<div class="register-form">
+				<div class="form-group">
+				<span class="i-user f-span"><input type="text" placeholder="请输入账号" class="f-input" /></span>
+				</div>
+				<div class="form-group">
+				<span class="i-password f-span"><input type="password" placeholder="请输入密码" class="f-input"/> </span>
+				</div>
+				<div class="form-group">
+				<span class="i-password f-span"><input type="password" placeholder="请再次输入密码" class="f-input"/> </span>
+				</div>
+			</div>
+			<div class="l-btn">
+				<button type="button" class="btn btn-danger ">注册</button>
+			</div> 
+		</div>
+		
+	
+		<!-- 
+		登录 注册结束
+		-->
+		<div id="header">
+			<div id="logo"><a href="index.html">WoniuShop</a></div>
+			<div id="userzoom">
+				<!-- if not login , use this code block-->
+				<!-- <div id="n-inout">
+					<a href="#" onclick="showLoginBox()" class="icon i-user">登录</a>
+					<a href="#" onclick="showRegisterBox()" class=" icon i-register">注册</a>
+				</div> -->
+				<!-- if logined，use this -->
+				<div id="y-inout">
+					<a href="allorder.html" class="icon i-order">订单</a>
+					<a href="shopcar.html" class="icon i-shopcar">购物车</a>
+					<a href="" class="icon i-user">13888888888</a>
+					<a href="" class="icon i-loginout">注销</a>
+				</div>
+			</div>
+		</div>
+	<!-- 中间区域 -->
+	<div id="address-main">
+		<h1 class="title">已有邮寄地址</h1>
+		<div id="address ">
+			<div class="a-list">
+				<!-- <div class="a-item ">
+					<div class="i-info">
+						<span  class="i-s-title">姓名: </span><span class="i-s-name">邓乃文</span>
+						<span class="i-s-title">电话: </span><span class="i-s-phone">10086</span>
+						<span class="i-s-title">邮寄编码: </span><span class="i-s-number">610620</span>
+					</div>
+					<div class="i-address ">四川省成都市高新区孵化园园区3栋一单元111号</div>
+					<div class="i-delete"><img src="icon/关闭.png" ></div>
+				</div> -->
+			</div>
+			
+		</div>
+		<h1 class="title">添加邮寄地址</h1>
+		<div id="add-address">
+				<form action="" id="form-address">
+					<div class="add-form-group ">
+						<label for="name">姓名:</label>
+						<input type="text" id="name"/>
+					</div>
+					<div class="add-form-group ">
+						<label for="phone">手机:</label>
+						<input type="number" id="phone"/>
+					</div>
+					<div class="add-form-group inline-block">
+						<label for="province">省份:</label>
+						<select id="province">
+							<option value ="四川" selected="selected" >四川</option>
+						</select>
+					</div>
+					<div class="add-form-group inline-block">
+						<label for="city">城市:</label>
+						<select id="city" name="city">
+							<option value ="成都" selected="selected">成都</option>
+						</select>
+					</div>
+					<div class="add-form-group inline-block">
+						<label for="county">区县:</label>
+						<select id="county" name="county">
+							<option value ="高兴区" selected="selected">高新区</option>
+						</select>
+					</div>
+					<div class="add-form-group inline-block">
+						<label for="street">街道:</label>
+						<select id="street">
+							<option value ="孵化园" selected="selected">孵化园</option>
+						</select>
+					</div>
+					<div class="add-form-group address-detail">
+						<label for="name">详细地址:</label>
+						<textarea id="detail"></textarea>
+					</div>
+					<div class="add-form-group add-button ">
+						<button type="button" class="btn btn-info"  id="addAddress">添加地址</button>
+					</div>
+				</form>
+		</div>
+	</div>	
+			
+		
+	<!-- 尾部区域 -->
+	<div id="footer">
+		蜗牛创想科技-woniushop&copy; 版权所有
+	</div>
+	<script src="js/jquery.min.js" ></script>
+	<script src="js/basic.js" ></script>
+	<script src="js/common.js" ></script>
+	<script src="js/address.js" ></script>
+	</body>
+</html>

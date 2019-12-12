@@ -1,0 +1,8 @@
+#连接config-server服务
+spring:
+  cloud:
+    config:
+      name: application-provider-user    #要读取配置文件的名字
+      profile: user                 #要加载的环境
+      label: master                 #git上的哪个分支
+      uri: http://localhost:7500  #连接到config-server的路径

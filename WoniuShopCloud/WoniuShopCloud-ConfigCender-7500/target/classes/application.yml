@@ -1,0 +1,27 @@
+server:
+  port: 7500
+
+spring:
+  application:
+    name: WoniuShopCloud-Config-Server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/smilepkc/woniu58.git  #仓库地址
+          #search-paths: config-repo      #仓库下的相对地址，可以有多个，用逗号隔开
+          username: 632182311@qq.com   #账号
+          password: pk187287    #密码
+
+eureka:
+  client:
+    service-url: 
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: WoniuShopCloud-Config-Server-7500
+    prefer-ip-address: true
+info: 
+  app.name: WoniuShopCloud
+  auther: pk
+  bulid.artifactId: WoniuShopCloud-ConfigCender-7500$
+  bulid.version: 0.0.1-SNAPSHOT$     

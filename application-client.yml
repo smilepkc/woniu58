@@ -20,7 +20,7 @@ server:
   port: 7501
  
 spring: 
-  profile: test      #开发环境
+  profile: test      #测试环境
   application:
     name: woniu58-config-client-test #当前项目的名字
 

@@ -1,0 +1,72 @@
+#order-main,#o-address,#o-detailk,#gopay{
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+#order-main{
+	padding-bottom:50px;
+	margin-bottom: 20px;
+}
+
+
+.d-total{
+	font-size: 20px;
+	text-align: right;
+	height: 50px;
+	line-height: 50px;
+	font-weight: bold;
+	color: darkred;
+}
+
+
+/* 订单 */
+
+#o-detail{
+	margin-top: 30px;
+}
+.d-number{
+	font-size: 20px;
+	padding:10px 0px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #ccc;
+	
+	padding-left: 10px;
+}
+.d-goodlist{
+	
+}
+.g-item{
+	border-bottom: 1px solid #f1f1f1;
+	padding:10px 20px;
+	box-sizing: border-box;
+	height: 70px;
+}
+.g-item:hover{
+	background-color: #f1f1f1;
+}
+.g-item div{
+	float: left;
+	width: 25%;
+	text-align: center;
+	height: 100%;
+	overflow:hidden;
+}
+.item-count{}
+.item-img{
+	border-radius: 50%;
+}
+.item-img img{
+	height: 100%;
+}
+.item-name{
+	font-size: 14px;
+	
+}
+.item-price{
+	
+}
+/* 按钮  */
+#gopay{
+	text-align: right;
+}

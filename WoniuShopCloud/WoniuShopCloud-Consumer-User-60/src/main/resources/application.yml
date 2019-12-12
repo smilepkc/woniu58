@@ -1,0 +1,18 @@
+server:
+  port: 60
+ribbon:  eureka:    enabled: true #开启负载均衡，默认开启轮训
+eureka:
+  client:
+    service-url: 
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: WoniuShopCloud-Consumer-User-60
+    prefer-ip-address: true
+spring:
+  application:
+    name: WoniuShopCloud-Consumer-User
+info: 
+  app.name: WoniuShopCloud
+  auther: pk
+  bulid.artifactId: ${project.artifactId}$
+  bulid.version: ${project.version}$      

@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.pk</groupId>
+    <artifactId>WoniuShopCloud</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>WoniuShopCloud-ConfigCender-7500</artifactId>
+  <packaging>war</packaging>
+  
+   <dependencies>
+  	<!-- jgit：如果egit无法拉取文件，可以试试jgit -->
+  	<!-- <dependency>
+  		<groupId>org.eclipse.jgit</groupId>
+  		<artifactId>org.eclipse.jgit</artifactId>
+  		<version>5.3.0.201903130848-r</version>
+  	</dependency> -->
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-web</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter-test</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-devtools</artifactId>
+  	</dependency>
+  	<!-- 配置中心 -->
+  	<dependency>
+  		<groupId>org.springframework.cloud</groupId>
+  		<artifactId>spring-cloud-config-server</artifactId>
+  	</dependency>
+  	<dependency>
+    	<groupId>org.springframework.cloud</groupId>
+    	<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-actuator</artifactId>
+	</dependency>
+</dependencies>
+</project>

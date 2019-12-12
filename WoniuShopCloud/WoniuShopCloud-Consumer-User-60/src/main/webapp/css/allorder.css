@@ -1,0 +1,51 @@
+/* table */
+#orders{
+	width: 1200px;
+	margin: 0 auto;
+	font-size: :;px;
+}
+#orders th{
+	border-bottom:1px solid #ccc;
+}
+#orders td{
+	height: 50px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+}
+#orders td img{
+	height: 50px;
+}
+#orders .order-id{
+	width: 30%;
+	
+}
+
+
+#orders .no-border{
+	border: none;
+}
+
+#refundBox{
+	width: 600px;
+	height: 400px;
+	border-radius: 10px;
+	box-shadow: 0 0 4px #000;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -300px;
+	background-color: white;
+	display: none;
+	z-index: 99;
+}
+
+.close{
+	height: 20px;
+	text-align: right;
+	padding:6px 12px;
+}
+.close img{
+	cursor: pointer;
+}
+
